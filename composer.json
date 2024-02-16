@@ -1,0 +1,16 @@
+{
+    "name": "imply/lista2",
+    "autoload": {
+        "psr-4": {
+            "Imply\\Lista2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felipe Staub"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}
