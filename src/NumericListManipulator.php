@@ -7,6 +7,8 @@
          * @return array
          */
         public function sum(array $numericList): int|float {
+            $this->validateNumericList($numericList);
+
             return array_sum($numericList);
         }
 
@@ -17,6 +19,8 @@
          * @return array
          */
         public function getBiggerNumber(array $numericList): int|float {
+            $this->validateNumericList($numericList);
+
             return count($numericList) >= 1 ? max($numericList) : 0;
         }
 
@@ -27,6 +31,8 @@
          * @return array
          */
         public function getSmallerNumber(array $numericList): float {
+            $this->validateNumericList($numericList);
+
             return count($numericList) >= 1 ? min($numericList) : 0;
         }
 
@@ -37,9 +43,11 @@
          * @return array
          */
         public function getAscendingNumericList(array $numericList): array {
+            $this->validateNumericList($numericList);
+
             asort($numericList);
 
-            return array_values($numericList);
+            return count($numericList) >= 1 ? array_values($numericList) : [];
         }
 
         /**
@@ -49,9 +57,11 @@
          * @return array
          */
         public function getDescendingNumericList(array $numericList): array {
+            $this->validateNumericList($numericList);
+
             arsort($numericList);
 
-            return array_values($numericList);
+            return count($numericList) >= 1 ? array_values($numericList) : [];
         }
 
         /**
@@ -61,6 +71,8 @@
          * @return array
          */
         public function getEvenNumbers(array $numericList): array {
+            $this->validateNumericList($numericList);
+
             return array_values(array_filter($numericList, function($number) {
                 return ($number % 2) === 0;
             }));
@@ -73,9 +85,26 @@
          * @return array
          */
         public function getOddNumbers(array $numericList): array {
+            $this->validateNumericList($numericList);
+
             return array_values(array_filter($numericList, function($number) {
                 return ($number % 2) !== 0;
             }));
+        }
+
+        /**
+         * Throws an exception if the provided array contains non-numeric values.
+         * 
+         * @param $numericList Array to look through.
+         * @throws Exception if the array contains non-numeric values.
+         * @return void
+         */
+        private function validateNumericList(array $numericList): void {
+            foreach ($numericList as $element) {
+                if (!is_numeric($element)) {
+                    throw new Exception('The provided array contains non-numeric values!');
+                }
+            }
         }
     }
 ?>
