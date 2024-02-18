@@ -136,7 +136,7 @@
          * Test if the smaller number of an empty list is returning 0.
          */
         public function testGetSmallerNumberFromEmptyList() {
-            $this->assertEquals(0, $this->numericListManipulator->getBiggerNumber([]));
+            $this->assertEquals(0, $this->numericListManipulator->getSmallerNumber([]));
         }
 
         /**
