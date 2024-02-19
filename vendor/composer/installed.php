@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '41e6a5e7c0603b7074d27ca9726a7ab9a22e8f7b',
+        'reference' => '57759d7b8f49f039fb083a92a6831d3d43f2fb61',
         'name' => 'imply/lista2',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '41e6a5e7c0603b7074d27ca9726a7ab9a22e8f7b',
+            'reference' => '57759d7b8f49f039fb083a92a6831d3d43f2fb61',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(

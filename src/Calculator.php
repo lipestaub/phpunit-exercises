@@ -1,4 +1,4 @@
-<?php
+<?php    
     class Calculator {
         /**
          * Returns the sum of the two elements provided.

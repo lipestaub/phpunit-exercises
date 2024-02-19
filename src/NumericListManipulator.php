@@ -1,4 +1,4 @@
-<?php
+<?php    
     class NumericListManipulator {
         /**
          * Returns the sum of the array elements.

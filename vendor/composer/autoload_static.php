@@ -16,10 +16,6 @@ class ComposerStaticInite2c8fab518230fc743231982b63f117d
         array (
             'PhpParser\\' => 10,
         ),
-        'I' => 
-        array (
-            'Imply\\Lista2\\' => 13,
-        ),
         'D' => 
         array (
             'DeepCopy\\' => 9,
@@ -30,10 +26,6 @@ class ComposerStaticInite2c8fab518230fc743231982b63f117d
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
-        ),
-        'Imply\\Lista2\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'DeepCopy\\' => 
         array (
