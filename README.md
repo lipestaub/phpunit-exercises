@@ -11,7 +11,7 @@ This repository provides unit tests to verify the correctness of solutions to a 
 1.  Clone the repository:
 
     ```bash
-    git clone [https://github.com/lipestaub/phpunit-exercises.git]
+    git clone [https://github.com/lipestaub/phpunit-exercises.git](https://www.google.com/search?q=https://www.google.com/search%3Fq%3Dhttps://github.com/lipestaub/phpunit-exercises.git)
     cd phpunit-exercises
     ```
 
